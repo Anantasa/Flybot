@@ -30,9 +30,22 @@ function main() {
   	var baseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + lat + "," + lng + "&radius=16000&keyword=airport&key=AIzaSyCKXaj1k3CcaIdVJl2QHtHlfAc3aFICb-c";
 	$("#newmessage").val(baseUrl);
 	
-	$.getJSON(baseUrl,  (data) => {
-    renderData(data);
-  })
+	 $.ajax({
+            url: baseUrl,
+            type: "GET",
+            crossDomain: true,
+            dataType: "json",
+            success: function sendData(data) {
+            renderData(data)
+            },
+            error: function (xhr, status) {
+                alert("error");
+            }
+        });
+	
+	// $.getJSON(baseUrl,  (data) => {
+//     renderData(data);
+//   })
 	
 	function renderData(){
 	console.log(data);
