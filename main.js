@@ -221,9 +221,7 @@ function rendering(data){
   $('.container').append(`<div class="chatbotbubble">
 		<p class="chatbot">FlyBot: The least costly and most quality flight we were able to find for you was an ${planeType}. This was made possible by our good friends at ${company} for the mere cost of $${cost}\.</p>
 	</div>`);	
-$('.container').append(`<div class="chatbotbubble">
-		<a href="./page1.html"><p class="chatbot">FlyBot: Learn more about this flight here</p></a>
-	</div>`);	
+
 	
 
 

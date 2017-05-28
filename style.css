@@ -91,6 +91,12 @@ filter: invert(1);
 font-color:white;
 }
 
-	
-
+div.container2{
+width: 375px;
+height: 510px;
+border-bottom: 3px solid #59A5D8;
+background-color: #59A5D8;
+padding-top: 10px;
+overflow: scroll;
+}
 
