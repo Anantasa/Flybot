@@ -47,11 +47,17 @@ width: 69px;
 height: 69px;
 }
 
-p.read{
-font-family: 'Josefin Sans', sans-serif;
-
+textarea.newmessage{
+font-color: black;
+font-size: 19px;
+height: 91.5%;
+width: 98%;
+pos
 }
 
-p.messagenew{
-font-family: 'Playfair Display', serif;
+.beautiful {
+-webkit-filter: invert(1);
+filter: invert(1);
 }
+
+
