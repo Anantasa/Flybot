@@ -69,7 +69,7 @@ function main() {
       //its own spot in the array and then loop over the array which we then check to 
       //see if it matches any of our destinations which we then abbreviate
       $('.container').append(`<div class="userbubble">
-		<p class="user">Sai: ${message}</p>
+		<p class="user">User: ${message}</p>
 	</div>`);
 		
       
@@ -104,7 +104,7 @@ function main() {
        
        
        $.ajax({
-        url: 'http://cors-anywhere.herokuapp.com/' + baseUrl,
+        url: 'https://cors-anywhere.herokuapp.com/' + baseUrl,
         type: 'GET',
         beforeSend: function (xhr) {
           xhr.setRequestHeader('origin', 'null');
@@ -135,6 +135,9 @@ for(var i = 0; i < 30; i++){
       console.log(des);	
       console.log(dateString);
       console.log(abbr);
+      
+    
+
       
       var FlightRequest = {
       "request": {
@@ -221,21 +224,14 @@ function rendering(data){
 $('.container').append(`<div class="chatbotbubble">
 		<a href="./page1.html"><p class="chatbot">FlyBot: Learn more about this flight here</p></a>
 	</div>`);	
-
-$('.container').append(`<div class="chatbotbubble">
-		<p class="chatbot">FlyBot: If you are not interested in this flight, check this one out:</p>
-	</div>`);		
 	
-
-
- }
 
 
       
      
   
       
-    });
+   } });
   
 }
 
