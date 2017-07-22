@@ -106,8 +106,6 @@ function main() {
        $.ajax({
         url: 'https://cors-anywhere.herokuapp.com/' + baseUrl,
         type: 'GET',
-        beforeSend: function (xhr) {
-        },
         success: function (data) { renderData(data) },
         error: function (data) { alert("nope", data)},
       });
