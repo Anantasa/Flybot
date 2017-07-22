@@ -107,7 +107,6 @@ function main() {
         url: 'https://cors-anywhere.herokuapp.com/' + baseUrl,
         type: 'GET',
         beforeSend: function (xhr) {
-          xhr.setRequestHeader('origin', 'null');
         },
         success: function (data) { renderData(data) },
         error: function (data) { alert("nope", data)},
