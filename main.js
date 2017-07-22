@@ -100,7 +100,7 @@ function main() {
       getLocation(function (position) {
        var lat = position.coords.latitude;
        var lng = position.coords.longitude;
-       var baseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + lat + "," + lng + "&radius=16000&keyword=airport&key=AIzaSyBcitbuYoSFELyS-8oRmZUAV0ez1JzzMys";
+       var baseUrl = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + lat + "," + lng + "&radius=1600000&keyword=airport&key=AIzaSyBcitbuYoSFELyS-8oRmZUAV0ez1JzzMys";
        
        
        $.ajax({
